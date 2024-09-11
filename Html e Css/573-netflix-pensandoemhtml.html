@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;;
+        }
+
+        #heading {
+            background-color: rgb(229, 9, 20);
+            display: flex; /*Display flex avisa que os elementos filhos deste terá comportamento diferente dele*/
+            justify-content: space-between; /*Joga um pra cada lado*/
+        }
+
+        #heading .h1{
+            padding: 15px; /*caso tudo igual, se nao padding: topo(px) direita(px) baixo(px) esquerda(px)*/
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        #heading a {
+            color: white;
+            text-decoration: none; /*Para tirar a decoração do link, aquele subilinhado, nenhuma decoração*/
+            font-family: sans-serif;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header id="heading">
+       <h1 class="h1">
+        <a href="#">Netflix</a>
+       </h1>
+       <h2 class="h1">
+        <a href="#">Netflix</a>
+       </h2>
+    </header>
+</body>
+</html>

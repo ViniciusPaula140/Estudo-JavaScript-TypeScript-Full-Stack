@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.meu-menu {
+    background-color: red;
+}
+.lista {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    
+}
+.lista li {
+    padding: 5px 10px;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+}
+
+a:link {
+    color: black;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.104);
+
+}
+
+li:hover a {
+    color: white;
+}
+
+.pseudo-elemento li::after{
+    content: "Fui criado no CSS e não existo no HTML";
+    color: red;
+}

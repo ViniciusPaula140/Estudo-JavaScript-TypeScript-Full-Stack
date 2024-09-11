@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+
+</head>
+<body>
+<nav class="meu-menu">
+    <div class="lista-pai">
+        <ul class="lista">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<h1>Pseudo-Estados</h1><br>
+
+<article>
+    <h2>Vamos praticar sobre pseudo-elementos:</h2>
+
+    <p>Pseudo-estado é diferente de pseudo-classes. Pseudo-classes é quando uma classe está representando um estado de forma não explicita. Por exemplo, um link já vem por seu padrão um estado de "Link", como um input radio já vem por seu padrão um estado não explicito de unchecked</p>
+    <br>
+    <p>Pseudo-estados se refere a criação pseuda de um estado. vou criar um elemento onde ele só existe no css.
+    Ele é tratado com a representação (::) no CSS. pode ser usado por exemplo: 
+    <br>
+    <code>
+        ul li::after {
+            contente : "Criando algo";
+        }
+    </code>
+    </p>
+
+
+    <p>Vamos ver na prática: </p><br>
+
+    <ul class="pseudo-elemento">
+        <li>Eu fui criado no HTML  </li>
+        <li>Eu fui criado no HTML  </li>
+        <li>Eu fui criado no HTML  </li>
+        <li>Eu fui criado no HTML  </li>
+        <li>Eu fui criado no HTML  </li>
+    </ul>
+</article>
+<hr>
+<br>
+<h2>Pseudo-elementos mais utilizados:</h2>
+<br>
+<h3>::fist-letter{}  primeira letra</h3>
+<h3>::selection{} O que está selecionado</h3>
+<h3>::fist-line{} primeira linha</h3>
+<br>
+<h3>::placeholder{}</h3>
+
+</body>
+</html>

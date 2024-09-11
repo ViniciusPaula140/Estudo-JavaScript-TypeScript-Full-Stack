@@ -1,0 +1,113 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        
+        table {
+            border-collapse: collapse; /*Une as bordas*/ 
+            width: 50%;
+        }
+        
+        .responsive-table {
+            max-width: 100%;
+            overflow: auto;
+        }
+
+        table caption {
+            caption-side: bottom;
+            text-align: left;
+            font-style: italic;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        table td, table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+        tfoot td, thead th{
+            background: #f6dfdf;
+        }
+        tfoot td{
+            font-style: italic;
+        }
+
+        
+    </style>
+ </head>
+ <body>
+    <div class="responsive-table">
+        <table>
+            <thead>
+                <th>Titulo 1</th>
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>T1 - linha 1</td>
+                    <td>T2 - linha 1</td>
+                    <td>T3 - linha 1</td>
+                </tr>
+                <tr>
+                    <td>T1 - linha 2</td>
+                    <td>T2 - linha 2</td>
+                    <td>T3 - linha 2</td>
+                </tr>
+                <tr>
+                    <td>T1 - linha 3</td>
+                    <td>T2 - linha 3</td>
+                    <td>T3 - linha 3</td>
+                </tr>
+                <tfoot>
+                    <td>RODAPÉ</td>
+                    <td>RODAPÉ</td>
+                    <td>RODAPÉ</td>
+                </tfoot>
+            </tbody>
+        </table><br>
+        <table>
+            <thead>
+                <th>Titulo 1</th>
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2" rowspan="2">T1 - linha 1</td>
+                    <td>T2 - linha 1</td>
+                    
+                </tr>
+                <tr>
+
+                    <td>T3 - linha 2</td>
+                </tr>
+                <tr>
+                    <td>T1 - linha 3</td>
+                    <td>T2 - linha 3</td>
+                    <td>T3 - linha 3</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="2" rowspan="2">RODAPÉ 1.1</td>
+                        
+                        <td>TOTAL:</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>R$: ####</td>
+                    </tr>
+
+                </tfoot>
+            </tbody>
+            <caption>Uma descrição para tabela</caption>
+        </table>
+    </div>
+ </html>

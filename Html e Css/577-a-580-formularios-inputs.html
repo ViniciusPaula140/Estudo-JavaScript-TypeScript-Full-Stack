@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #lname, #ldate, #ldatatime, #lemail,#larquivo, #select {
+            cursor: pointer;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <form action="#" method="get">
+        <p>O meu formulario</p>
+        <p>
+            <label for="nome" id="lname">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="Resetar">
+        </p>
+        <p>
+            <label for="dev">Sou um desenvolvedor:</label>
+            <input type="checkbox" name="dev" id="dev" value="sim">SIM
+        </p>
+        <p>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="genero" id="masculino" value="masculino"> |
+
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="genero" id="feminino" value="feminino">  |
+
+            <label for="nao-definido">Não definido</label>
+            <input type="radio" name="genero" id="nao-definido">
+        </p>
+        <p>
+            <label for="date" id="ldate">Data de nascimento:</label>
+            <input type="date" name="data" id="data">
+        </p>
+        <p>
+            <label for="datetime" id="ldatetime">Data tempo:</label>
+            <input type="datetime-local" name="datatime" id="datatime" value="2024-09-05T20:00">
+        </p>
+        <p>
+            <label for="email" id="lemail">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="e-mail" autocomplete="off">
+        </p>
+        <p>
+            <label for="time">Tempo:</label>
+            <input type="time" name="tempo" id="time" value="20:00:01">
+        </p>
+        <p>
+            <label for="cor">Cor favorita:</label>
+            <input type="color" name="cor" id="cor" value="#00ff00">
+        </p>
+        <p>
+            <label for="arquivo" id="larquivo">Envie o seu arquivo ou foto:</label>
+            <input type="file" name="arquivo" id="arquivo" accept=".png, .jpeg, .svg"> <!--Para qualquer tipo de imagem image/*--><!--Para aceitar varios arquivos de uma vez, use o "multiple"-->
+        </p>
+        <p>
+            <label for="number">Número:</label>
+            <input type="number" name="number" id="number" min="10" max="50" step="5">
+        </p>
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+        </p>
+        <p>
+            <label for="range">Range</label>
+            <input type="range" name="range" id="range">
+        </p>
+        <p>
+            <label for="url">URL:</label>
+            <input type="url" name="url" id="url" placeholder="Tipo url" required>
+        </p>
+        <p>
+            <label for="search">search</label>
+            <input type="search" name="search" id="search" placeholder="Tipo search">
+        </p>
+        <p>
+            <label for="select" id="select">Select:</label>
+            <select name="select" id="section">
+                <option value="valor real">O que a pessoa ver</option>
+                <!--Outra maneira é usar label-->
+                <option value="valor real 2" label="label-oq-a-pessoa-ver-1"> </option>
+            </select>
+        </p>
+        <p>
+            <label for="area">área</label>
+            <input type="textarea" name="area" id="area" placeholder="Isso é uma area" row="10" col="10">
+        </p>
+    </form>
+
+ 
+</body>
+</html>

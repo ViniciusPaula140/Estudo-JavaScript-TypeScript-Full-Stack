@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+section div p,
+section div h2 {
+    color: red;
+}
+
+section h1,
+section p {
+    color: blueviolet;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+/*Selecionando um classe sendo filho de main- content*/
+.main-content .titulo-two-main {
+    color: blue;
+    font-style: italic;
+}
+
+/*Podemos ser mais especificos ainda, falando a tag e classe filho de um pai*/
+div.main-content h3.titulo-two-main{
+    color: darkgoldenrod;
+}  
+
+/*> significa apenas filhas direta*/
+.pai > .filha{
+    margin: 20px;
+}
+
+.div-um-irmao h3+p {
+    color: red;
+}
+.div-para-todos-os-irmaos h3~p {
+    color: blue;
+}
+/*Se isso fosse com classe:*/
+
+.div-para-todos-os-irmaos-classe .um ~ .dois{
+    color: red;
+}
+
+[meu-atributo="valor"] {
+    color: red;
+}
+
+.pai1 .um + .dois{
+    color: red;
+}
+
+[atributo^="inicio"] {
+    color: red;
+}
+
+[atributo *= "contem"] {
+    color: blue;
+}
+
+[atributo $= "fim"] {
+    color: green
+}

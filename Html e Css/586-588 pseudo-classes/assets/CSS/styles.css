@@ -1,0 +1,90 @@
+.caixa {
+    background: rebeccapurple;
+    width: 100px;
+    height: 100px;
+    transition: all 1s ease-in-out;
+}
+
+.caixa:hover{
+    content: url(https://i.pinimg.com/originals/7f/d4/f6/7fd4f63a52a274dd3c1fc147d54744c6.gif);
+    width: 300px;
+    height: 300px; 
+}
+
+a:visited {
+    color: darkorange;
+}
+
+a:link {
+    color: blueviolet;
+}
+
+a:hover {
+    color: red;
+    background: black;
+    text-decoration: none;
+}
+
+a:active { /*Está clicado*/
+    background: green;
+}
+
+input:focus { /*Todo input que tiver em focus*/ 
+    border: 1px solid rgb(183, 0, 255);
+    box-shadow: 0 0 5px rgb(255, 0, 217);
+    outline: rgb(183, 0, 255);
+
+}
+
+input:disabled /*todo input que tiver desabilitado*/ {
+    cursor: not-allowed;
+    background: red;
+}
+
+input:enabled /*Todo input ativado (normal)*/ {
+    background-color: blueviolet;
+}
+
+input#test1 + p{
+    color: white;
+}
+
+input#test1:checked + p { /*Todo input com id test que estiver como estado checked, que tenha como adjcente imediato um p, faça {*/
+    color: red;
+    font-size: 100px;
+}
+
+.img-radio{
+    transition: all 1s ;
+    width: 256px;
+    height: 256px;
+
+}
+
+#id-radio1:checked + p{
+    background-image: url(https://pixeljoint.com/files/icons/full/jotarokujo.png);
+}
+
+#id-radio2:checked + .img-radio {
+    background-image:url(https://pm1.aminoapps.com/6863/7e47cd70c8fac9c2de6e7763cb68cdf90f9d19bcr1-256-256v2_00.jpg);
+}
+
+.pai-jojo {
+    display: flex;
+}
+
+ul li:nth-child(even) /*pares*/ {
+    background-color: red;
+}
+
+ul li:nth-child(odd) {
+    background-color: blue;
+}
+
+ul li:nth-child(3n) {
+    background-color: darkorchid;
+}
+
+ul li:nth-child(2n+3) {
+    background-color: wheat;
+}

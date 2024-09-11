@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando</title>
+    <style>
+        #grande {
+            width: 400px;
+            height: 200px;
+        }
+
+        .nome-vermelho {
+            color: blue;
+        }
+
+        .div-vermelha {
+            background-color: red;
+            color: white;
+        }
+
+        .mudar-span {
+            background-color: black;
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Esse é meu título principal</h1>
+    <p><a href="https://www.lipsum.com/"><img id="grande" src="https://compote.slate.com/images/5294e6d0-53ed-4a4a-a350-7eaeab72ac93.jpeg?crop=1560%2C1040%2Cx0%2Cy0&width=840" alt="essa é a foto de lorem" srcset=""></a> <br><del>Lorem</del> <strong><span class="nome-vermelho">LOREM</span></strong> ipsum dolor sit amet consectetur, adipisicing elit. Nemo explicabo pariatur aliquam porro quod, nulla dolore expedita accusantium ut voluptatum excepturi odit maxime eos accusamus incidunt debitis eum cupiditate. Rem?</p>
+
+    <h2>O que é o LOREM</h2>
+    <p>Segundo o filósofo PITON, Decartes: <br>
+        <q cite="https://slate.com/news-and-politics/2023/01/lorem-ipsum-history-origins.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis excepturi voluptatum, alias similique eos doloribus corrupti cum animi totam repudiandae consectetur, architecto debitis nesciunt doloremque obcaecati facilis optio provident maxime?</q>
+    </p>
+<h2>Agora irei fazer comandos que não são permitidos dentro de um p</h2>
+<p>São eles os comando &lt; hl &gt; Linha horizontal:</p>
+<hr>
+
+<p>Bloco de código &lt;pre&gt;&lt;code&gt; console.log('Hello world!') &lt;/code&gt;&lt;/pre&gt; BLOCO de código. CODIGO nao podem ficar dentro de P, pois blocos são Display: block e oq são permitidos dentro de um p são Display: inline</p>
+<p>Exemplo de bloco de código:</p>
+<pre><code>
+let num = document.querySelect('input#numf')
+let vetor = []
+
+a = Number(num.value)
+vetor.push(a)
+</code></pre>
+</body>
+</html>
+<div class="div-vermelha">Isso é uma div e também não pode ser colocado dentro de um p</div>
+
+<p>Muito obrigado por ler, agora irei usar um &lt;span&gt; para mudar meu nome &lt;/span&gt;. span é um conteiner generico feito somente para mudar algo visual, nao será lido por quem tem nenhum outro sentido alem do visual. quem tem deficiencia nao irá escutar</p>
+
+<p><span class="mudar-span"> Vinicius Paula </span>  0 usei span</p>

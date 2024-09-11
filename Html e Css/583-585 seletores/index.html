@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+
+</head>
+<body>
+<section>
+    <h1>Lorem</h1>
+    <p>lorem imp</p>
+    <div>
+        <h2>Blala</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dignissimos odio corporis voluptates enim tenetur animi culpa minima voluptas ipsum molestias perspiciatis sint, qui repellat maxime facere aperiam? Animi, quia?</p>
+    </div>
+</section>
+    <hr>
+
+    <!--Selecionando classe-->
+
+    <div class="main-content"> 
+        <h2 class="titulo-two-main">Titulo Two main</h2>
+        <h3 class="titulo-two-main">sou um h3</h3>
+        <h4 class="titulo-two-main">Sou um h4</h4>
+    </div>
+<hr>
+<h2>Para mostrar o seletor > (filho direto de alguem); nesse caso, .pai > .filha (selecionando a classe filha, que é filho direto de pai)</h2><br>
+<div class="pai">
+    Pai
+    <div class="filha">filha direta 1</div>
+    
+    <div class="neta">NETA</div>
+    
+    <div class="filha">filha direta 2</div>
+    
+    <div class="neta">NETA</div>
+    
+</div>
+<hr>
+<h2>Seletores de UM irmaos(+)</h2><br>
+<p>Isso é:</p>
+<code>.div-um-irmao h3+p{}</code>
+<p>Ou seja, o primeiro irmao de h3 que vem logo apos ele</p>
+<div class="div-um-irmao">
+    <h3>Sou um h3</h3>
+    <p>Lorem</p>
+    <p>Lorem</p>
+    <p>Lorem</p>
+    <p>Lorem</p>
+</div>
+<hr>
+<h2>Para todos os irmaos(~)</h2><br>
+<code>.div-para-todos-os-irmaos h3~p</code>
+<p>Ou seja, para TODOS os p que vem logo depois de h3</h3></p><br>
+
+<div class="div-para-todos-os-irmaos">
+    <h3>Sou um h3</h3>
+    <p>lorem</p>
+    <p>lorem</p>
+    <p>lorem</p>
+    <p>lorem</p>
+    <p>lorem</p>
+
+</div>
+
+<hr>
+<h2>Para todos os irmaos(~) - usando classe</h2><br>
+<div class="div-para-todos-os-irmaos-classe"> PAI
+    <p class="um"> 1 </p>
+    <p class="dois"> 2 </p>
+    <p class="um"> 1 </p>
+    <p class="um"> 1 </p>
+    <p class="dois"> 2 </p>
+    <p class="dois"> 2 </p>
+    <p class="um"> 1 </p>
+    <p class="um"> 1 </p>
+    <p class="dois"> 2 </p>
+</div>
+<HR> 
+    <h2>Para SELECIONAR ATRIBUTOS</h2><br>
+   <p>posso criar atributors</p>
+   <code>h2 class="classe-generica" meu-atributo="valor"></h2></code>
+    
+   <h2 class="classe-generica" meu-atributo="valor">h2 com atributo criado, baseando-se no valor</h2>
+
+<hr>
+<h2>Para atributos com valor que COMEÇA COM (^=)</h2>
+<div class="papai">
+    <div class="fia1" atributo="inicio-teste">
+        eu possuo um atributo que COMEÇA com "inicio"
+    </div>
+<hr>
+<h2>Para atributos com valor que CONTEM (*=)</h2>
+<div class="papai">
+    <div class="fia1" atributo="contem-teste">
+        eu possuo um atributo que contem a palavra contem
+    </div>
+
+<hr>
+<h2>Para atributos com valor que termina com($=)</h2>
+    <div class="papai">
+        <div class="fia1" atributo="palavra-fim">
+            eu possuo um atributo que termino com a palavra fim 
+        </div>
+    
+</div>
+</div>
+</body>
+</html>

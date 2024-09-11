@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid .col { 
+    width: 33.33%;
+    height: 300px;
+    background-color: red;
+    margin: 10px;
+    float: left ;
+}
+
+.grid::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+@media (max-width: 320px) {
+    .grid .col {
+        width: 100%;
+    }
+}
+
+
+@media all and (min-width: 321px) and (max-width: 768px) {
+    .grid .col {
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .grid .col {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .grid .col {
+        width: calc(25% - 20px);
+    }
+}
