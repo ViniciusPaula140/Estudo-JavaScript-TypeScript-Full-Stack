@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <form action="#"
+    >
+        <fieldset>
+            <legend>Criando grupo de pessoas</legend>
+            <p>
+                <label for="name">Nome: </label>
+                <input type="text" name="name" id="name" autocomplete="off">
+            </p>
+
+            <p>
+                <label for="sobrenome">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="sobrenome" autocomplete="off">
+            </p>
+
+            <p>
+                <label for="idade">Idade: </label>
+                <input type="number" name="idade" id="idade">
+            </p>
+
+            <p>
+                <input type="button" value="Adicionar" onclick="enviar()">
+            </p>
+
+        </fieldset>
+    </form>
+
+    <select name="pessoas" id="lpessoas" size="10">
+    </select>
+
+    <div id="res">
+
+    </div>
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>

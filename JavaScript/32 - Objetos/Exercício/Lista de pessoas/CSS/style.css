@@ -1,0 +1,20 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+select#lpessoas {
+    width: 200px;
+}
+
+p{
+    margin: 10px;
+}
+
+fieldset {
+    width: 200px;
+}
