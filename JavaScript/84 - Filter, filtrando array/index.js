@@ -1,4 +1,5 @@
 //Filter sempre retorna um array com a mesma quantidade ou menos
+//Retorna true para que adicione no novo array
 const numeros = [1, 5, 11, 50, 26, 30, 22]
 const filtrados = numeros.filter(valor => valor > 10);
 console.log(filtrados)
