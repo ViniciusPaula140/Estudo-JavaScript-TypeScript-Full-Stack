@@ -1,6 +1,7 @@
 function Calculadora() {
     // Atributo: exibe o elemento do DOM com a classe 'display'
     this.display = document.querySelector('.display');
+    this.display.focus()
 
     // Método: inicia a captura de cliques
     this.iniciar = () => {
