@@ -1,9 +1,7 @@
-const nome = 'Vinicius'
-const sobrenome = 'Paula'
-const falar = () => console.log('Oi')
+class Pessoa {
+    constructor(nome) {
+        this.nome = nome;
+    }
+}
 
-
-exports.nome = nome;
-exports.sobrenome = sobrenome;
-exports.falarAlgo = falar;
-
+exports.Pessoa = Pessoa;
