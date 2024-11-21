@@ -7,7 +7,10 @@ function rand(min, max) {
 
 function esperaAi(msg, tempo) {
     return new Promise ((resolve, reject) => {
-        if (typeof msg !== 'string') reject('Erro de tipografia > LOCAL: ');
+        if (typeof msg !== 'string') {
+            reject('Erro de tipografia > LOCAL: ');
+            return;
+        };
         setTimeout(() => {
             resolve(msg)
         }, tempo)
@@ -18,10 +21,11 @@ function executar() {
     esperaAi('Conectando ao DB', rand(1, 3))
     .then(conexaoDB => {
         console.log(conexaoDB)
-        return esperaAi('Verificando dados no DB', rand(1,3))
+        return esperaAi('Verificação dos dados', rand(1,3))
     })
     .catch(e => {
         console.log(e + ' Conexão com o DB')
+        throw new Error(e)
     })
     .then(verificacaoDados => {
         console.log(verificacaoDados)
@@ -29,6 +33,7 @@ function executar() {
     })
     .catch(e => {
         console.log(e + ' Verificação de dados.')
+        throw new Error(e)
     })
     .then(exibicao => {
         console.log(exibicao)
@@ -36,6 +41,7 @@ function executar() {
     })
     .catch(e => {
         console.log(e + ' Exibição dos dados')
+        throw new Error(e)
     })
     .then(respostaFinal => console.log(respostaFinal))
 }
