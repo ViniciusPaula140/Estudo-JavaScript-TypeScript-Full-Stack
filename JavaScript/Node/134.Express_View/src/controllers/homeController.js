@@ -1,10 +1,5 @@
 exports.paginaInicial = (req, res) => {
-    res.send(`
-        <form action="/" method="POST">
-            name: <input type="text" name="VINICIUS-BONITO">
-            <button>Enviar</button>
-        </form>
-        `)
+    res.render(`index`)
 }
 
 exports.trataPost = (req, res) => {
