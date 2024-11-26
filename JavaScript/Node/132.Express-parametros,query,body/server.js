@@ -1,24 +1,12 @@
 const express = require('express')
 const app = express();
+const routes = require('./routes')
+
+app.use(express.urlencoded({extended: true})) //Usado para tratar a ?
+app.use(routes)
 
 //req, res = requisição e resposta
 
-app.get('/', (req, res) => {
-    res.send(`
-        <form action='/' method="POST">
-        Nome: <input type="text" name="nome">
-        <button>Enviar formulario</button>
-        </form>
-    `)
-})
-
-app.post('/', (req, res) => {
-    res.send('Recebi o formulario')
-})
-
-app.get('/contatos', (req, res) => {
-    res.send('Entre em contato atráves de (XX)XXXXX-XXXX')
-})
 
 app.listen(3000,() => {
     console.log('Servidor em execução')
