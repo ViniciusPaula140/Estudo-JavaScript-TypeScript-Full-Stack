@@ -1,3 +1,5 @@
+const HomeModel = require('../models/homeModels')
+
 exports.paginaInicial = (req, res) => {
     res.render(`index`)
     return;
